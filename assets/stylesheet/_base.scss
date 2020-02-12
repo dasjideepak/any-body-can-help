@@ -4,32 +4,33 @@ html {
 
 body {
   line-height: 1.5;
-  font-family: 'Alegreya', serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.text-center {
+  text-align: center;
 }
 
 // Heading Elements
-h1 {
-  font-size: 44px;
-}
 
 h2 {
-  font-size: 36px;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 h1,
@@ -48,5 +49,138 @@ p {
 
 // Padding
 .padding {
-  padding: 85px 0;
+  padding: 100px 0;
 }
+
+//Hero Section - Index Page Style
+
+.hero-banner {
+  background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/home-banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 280px 0;
+    color: white;
+  }
+  .first-hero-heading {
+    font-weight: 500;
+    color:#FDBB00;
+    padding-bottom: 20px; 
+  }
+  .second-hero-heading {
+    font-weight: 800;
+    padding-bottom: 20px;
+  }
+  .hero-content p {
+    padding: 0 76px;
+    font-size: 1rem;
+  }
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.donate-btn {
+  background-color: #60BC0F;
+}
+
+.join-us-btn {
+  background-color: #FDBB00;
+  margin-left: 10px;
+}
+
+.donate-btn a, .join-us-btn a{
+  color: white;
+}
+
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .col {
+    padding: 80px 40px;
+    font-weight: 200;
+    font-size: 0.75rem;
+  }
+  .col-1 {
+    background-color: rgb(224, 77, 57);
+    color: white;
+  }
+  .col-2 {
+    background-color: #313131;
+    color: white;
+  }
+  .col-3 {
+  background-color: rgb(245, 183, 60);
+  color: black;
+  }
+  .read-more-btn {
+  background-color: white;
+  }
+  .read-more-btn a {
+  color: black;
+  }
+  p {
+    padding: 20px 0;
+  }
+}  
+
+// counting 
+
+.fact-counter-sec {
+  background-color: rgb(208, 235, 236);
+}
+
+.fact-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 10px 10px 10px;
+}
+
+.fact-count-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 60px 0;
+  .col {
+    text-align: center;
+    padding: 80px 40px;
+  }
+  .col1 {
+    background-color:rgb(224, 223, 223);
+  }
+  .col2 {
+    background-color: #ffffff;
+  }
+  img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  p {
+    padding-top: 20px;
+  }
+}
+
+// Become a Volunteer Section 
+
+.become-volunteer-sec {
+  background-image: url(../media/img1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white; 
+  p {
+    padding: 20px 0;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  .btn a {
+    color: black;
+  }
+}
+

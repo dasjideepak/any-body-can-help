@@ -6,6 +6,14 @@
   justify-items: center;
 }
 
+@media all and (max-width: 1024px) {
+  .contact-links {
+    width: 100%;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
 .contact-links .back-circle {
   height: 135px;
   width: 135px;
@@ -51,6 +59,14 @@
       grid-template-columns: repeat(2, 1fr);
 }
 
+@media all and (max-width: 1024px) {
+  .outer-container {
+    width: 100%;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
 .outer-container .form-container {
   background-color: #333333;
   padding: 60px 0;
@@ -77,6 +93,14 @@
   border-bottom: 1px solid white;
   outline: none;
   color: white;
+}
+
+@media all and (max-width: 1024px) {
+  .outer-container input,
+  .outer-container textarea {
+    width: 65%;
+    border: 1px solid white;
+  }
 }
 
 .outer-container textarea {

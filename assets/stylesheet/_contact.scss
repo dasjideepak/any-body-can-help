@@ -5,6 +5,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  @media all and (max-width: 1024px) {
+    width: 100%;
+    grid-template-columns: auto;
+  }
 
   .back-circle {
     height: 135px;
@@ -46,6 +50,10 @@
 .outer-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media all and (max-width: 1024px) {
+    width: 100%;
+    grid-template-columns: auto;
+  }
 
   .form-container {
     background-color: #333333;
@@ -73,11 +81,18 @@
     border-bottom: 1px solid white;
     outline: none;
     color: white;
+    @media all and (max-width: 1024px) {
+      width: 65%;
+      border: 1px solid white;
+    }
   }
 
   textarea {
     width: 65%;
     height: 80px;
+    @media all and (max-width: 1024px) {
+      // width: 100%;
+    }
 
   }
 

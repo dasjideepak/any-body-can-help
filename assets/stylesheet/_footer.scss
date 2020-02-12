@@ -101,3 +101,9 @@
 .footer a:hover {
     color: rgb(216, 162, 101);
 }
+
+@media all and (max-width:1024px) {
+    .main-footer-row {
+        grid-template-columns: 1fr;
+    } 
+}

@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  @media all and (max-width: 1024px) {
+  @media all and (max-width: 768px) {
     width: 100%;
     grid-template-columns: auto;
   }
@@ -50,7 +50,7 @@
 .outer-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media all and (max-width: 1024px) {
+  @media all and (max-width: 768px) {
     width: 100%;
     grid-template-columns: auto;
   }
@@ -81,7 +81,7 @@
     border-bottom: 1px solid white;
     outline: none;
     color: white;
-    @media all and (max-width: 1024px) {
+    @media all and (max-width: 768px) {
       width: 65%;
       border: 1px solid white;
     }
@@ -90,7 +90,7 @@
   textarea {
     width: 65%;
     height: 80px;
-    @media all and (max-width: 1024px) {
+    @media all and (max-width: 768px) {
       // width: 100%;
     }
 

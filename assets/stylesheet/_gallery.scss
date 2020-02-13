@@ -44,4 +44,8 @@ img-pic{
     .gallery-div{
         grid-template-columns: 1fr;
     }
+    .gallery-img:hover{
+        transform: none;
+        box-shadow: none;
+    }
 }

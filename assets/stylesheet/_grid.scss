@@ -12,9 +12,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, fr);
+  grid-template-columns: repeat(4, fr);
 }

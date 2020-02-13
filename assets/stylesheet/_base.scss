@@ -4,32 +4,33 @@ html {
 
 body {
   line-height: 1.5;
-  font-family: 'Alegreya', serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.text-center {
+  text-align: center;
 }
 
 // Heading Elements
-h1 {
-  font-size: 44px;
-}
 
 h2 {
-  font-size: 36px;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 h1,
@@ -45,8 +46,6 @@ p {
   font-size: 18px;
 }
 
-
-// Padding
 .padding {
-  padding: 72px 0;
+  padding: 80px 0;
 }

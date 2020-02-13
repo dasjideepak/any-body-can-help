@@ -131,9 +131,6 @@
   }
   
 @media all and (max-width: 1024px) {
-    html {
-        font-size: 14px;
-    }
     .box-grid {
         display: grid;
         grid-template-columns: 1fr;

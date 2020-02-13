@@ -39,34 +39,34 @@
 
 .social-links {
     justify-content: space-around;
-}
-
-.social-links a {
-    font-size: 1.5rem;
-    color: white;
-}
+    .social-links a {
+        font-size: 1.5rem;
+        color: white;
+    }
+}    
 
 .fab {
-    background-color: blue;
     padding: 0.75rem;
     border-radius: 50%;
-}
+    color: white;
+}    
 
 .fa-facebook {
     background-color: #3E578F;
 }
-
 .fa-twitter {
     background-color: #28A9E0;
 }
-
 .fa-youtube {
     background-color: #D62628;
 }
-
 .fa-instagram {
     background-color: #9D36B9;
 }
+.fa-linkedin {
+    background-color: rgb(76, 139, 233);
+}
+
 
 .contact-text {
     width: 80%;
@@ -75,6 +75,7 @@
 .contact-footer {
     padding: 20px 0;
 }
+
 
 .far, .fa-phone-alt {
     font-size: 1.4rem;

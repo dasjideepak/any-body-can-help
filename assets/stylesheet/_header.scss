@@ -13,8 +13,8 @@
 }
 
 .logo {
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .nav-links li {
@@ -43,7 +43,7 @@ a:hover {
 
 @media all and (max-width: 1024px) {
     .header {
-        background-color: black;
+      background-color: black;
     }
     .nav-links {
       display: none;
@@ -54,7 +54,6 @@ a:hover {
       left: 0;
       text-align: center;
       padding-top: 80px;
-      background-color: rgb(4, 10, 7);
     }
     .nav-links li {
       margin: 32px 0;

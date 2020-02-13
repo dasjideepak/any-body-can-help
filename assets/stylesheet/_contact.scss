@@ -8,6 +8,7 @@
   @media all and (max-width: 768px) {
     width: 100%;
     grid-template-columns: auto;
+    padding: 30px 0;
   }
  
   .back-circle {
@@ -75,7 +76,7 @@
   textarea {
     background-color: transparent;
     padding: 18px;
-    margin: 12px 24px;
+    margin: 16px 92px;
     border-radius: 8px;
     border: 0;
     border-bottom: 1px solid white;
@@ -91,7 +92,7 @@
   }
 
   textarea {
-    width: 70%;
+    width: 62%;
     height: 80px;
     @media all and (max-width: 768px) {
       width: 65%;

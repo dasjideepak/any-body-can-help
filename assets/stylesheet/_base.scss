@@ -49,3 +49,9 @@ p {
 .padding {
   padding: 80px 0;
 }
+
+@media all and (max-width: 1024px) {
+  html {
+      font-size: 12px;
+  }
+}

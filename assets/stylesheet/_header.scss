@@ -1,0 +1,81 @@
+.header {
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    padding: 16px;
+}
+
+.header-container {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links li {
+    margin-left: 32px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+a:hover {
+    color: red;
+}
+
+.ham {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+//Header Responsive
+
+@media all and (max-width: 1024px) {
+    .header {
+      background-color: black;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .nav-links li {
+      margin: 32px 0;
+    }
+    .nav-links li a {
+      color: red;
+    }
+    .logo {
+      z-index: 999;
+    }
+    .top-nav a {
+      font-size: 24px;
+    }
+    .ham {
+      font-size: 20px;
+      color: red;
+      display: inline-block;
+      z-index: 999;
+    }
+    .toggle:checked ~ .nav-links {
+      display: inline-block;
+      background-color: black;
+      height: 500px;
+    }
+}    

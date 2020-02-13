@@ -1,0 +1,70 @@
+.about-html{
+    font-size: 20px;
+    body{
+        background-color: #F8F3E8;
+    }
+}
+.mission-div , .vision-div , .motive-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem 0;
+    border:1px solid rgb(86, 199, 86);
+    box-shadow: 1px 1px 1rem  2px  grey;
+    padding: 1rem;
+    background-color:#DDAE52;
+    &:hover{
+        transform: scale(1.2);
+        box-shadow: none;
+    }
+}
+.mission-img{
+    width: 100%;
+    font-size: 0;
+
+}
+.mission-img-div{
+    font-size: 0;
+}
+.about-header-div{
+    padding: 1.5rem;
+    .mission-header{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .mission-para{
+        margin-bottom: 1rem;
+    }
+    a{
+        text-decoration: underline;
+        &:hover{
+            color: red;
+        }
+    }
+
+}
+.div-donation{
+    background-color: black;
+    width: 25rem;
+    height: 10rem;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        font-size: 4rem;
+    }
+    p{
+        color: white;
+        font-size: 2rem;
+    }
+}
+@media all and (max-width:768px){
+    .about-html{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .mission-div , .vision-div , .motive-div{
+        grid-template-columns: 1fr;
+    }   
+
+}

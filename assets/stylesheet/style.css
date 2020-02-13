@@ -439,6 +439,10 @@ a:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .mission-div:hover, .vision-div:hover, .motive-div:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .gallery-html {
@@ -502,6 +506,12 @@ img-pic {
   .gallery-div {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .gallery-img:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 

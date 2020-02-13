@@ -1,4 +1,4 @@
-// our-volunteer
+// General classes
 .our-Volunteer {
   background-color: #e4e7eb;
 }
@@ -7,10 +7,91 @@
   color: #85403a;
 }
 
-.volunteer-face {
-  grid-gap: 15px;
+.team-size-max {
+  &:hover {
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.social-links {
+  padding-bottom: 15px;
+}
+
+.social-links .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image {
+  width: 100%;
+  height: 320px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.volunteer-info {
+  h4 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: green;
+    }
+  }
+
+  p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: #85403a;
+  }
+}
+
+.volunteer-into {
+  p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 18px 0;
+    color: #85403a;
+  }
+}
+
+.link-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  position: relative;
+
+  &:hover {
+    background-color: green;
+  }
+}
+
+.fab {
+  color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1rem;
+
+  &:hover {
+    color: white
+  }
+}
+
+.bottom-padding {
+  padding-bottom: 4rem;
+}
+
+// our-member-section
+.our-member {
+  grid-gap: 35px 15px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   @media all and (max-width: 1024px) {
     width: 100%;
@@ -18,79 +99,17 @@
     grid-gap: 40px 0;
     padding: 40px 0;
   }
-
-  .team-size-max {
-    &:hover {
-      padding-bottom: 15px;
-      cursor: pointer;
-      transition: all .6s ease-in-out;
-      transform: scale(1.1);
-      box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  .social-links .links {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .image {
-    width: 100%;
-    height: 200px;
-    border-radius: 3px;
-
-  }
-
-  .volunteer-info {
-    h4 {
-      text-transform: capitalize;
-      font-size: 1.5rem;
-
-      &:hover {
-        color: green;
-      }
-    }
-
-    p {
-      text-transform: capitalize;
-      font-size: 1.1rem;
-      color: #85403a;
-    }
-  }
-
-  .volunteer-into {
-    p {
-      text-transform: capitalize;
-      font-size: 1.1rem;
-      padding: 18px 0;
-      color: #85403a;
-    }
-  }
-
-  .social-links {
-    .link-circle {
-      height: 30px;
-      width: 30px;
-      border-radius: 50%;
-      border: 1px solid gray;
-      position: relative;
-
-      &:hover {
-        background-color: green;
-      }
-    }
-
-    .fab {
-      color: grey;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 1.1rem;
-
-      &:hover {
-        color: white
-      }
-    }
-  }
 }
+
+// our-volunteer
+// .volunteer-face {
+//   display: grid;
+//   grid-template-columns:repeat(3,1fr);
+//   grid-gap: 45px 20px;
+//   @media all and (max-width: 1024px) {
+//     width: 100%;
+//     grid-template-columns: auto;
+//     grid-gap: 40px 0;
+//     padding: 40px 0;
+//   }
+// }

@@ -1,0 +1,174 @@
+.contact-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media all and (max-width: 1024px) {
+  .contact-links {
+    width: 100%;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.contact-links .back-circle {
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  background-color: #333333;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.contact-links .fas {
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact-links .address {
+  text-transform: capitalize;
+}
+
+.contact-links p {
+  padding: 0;
+}
+
+.contact-links .address-info {
+  font-size: 1.2rem;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+}
+
+.outer-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media all and (max-width: 1024px) {
+  .outer-container {
+    width: 100%;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.outer-container .form-container {
+  background-color: #333333;
+  padding: 60px 0;
+}
+
+.outer-container .form-heading {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.outer-container .form-box {
+  text-align: center;
+}
+
+.outer-container input,
+.outer-container textarea {
+  background-color: transparent;
+  padding: 18px;
+  margin: 12px 24px;
+  border-radius: 8px;
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+@media all and (max-width: 1024px) {
+  .outer-container input,
+  .outer-container textarea {
+    width: 65%;
+    border: 1px solid white;
+  }
+}
+
+.outer-container textarea {
+  width: 65%;
+  height: 80px;
+}
+
+.outer-container ::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.outer-container :-ms-input-placeholder {
+  text-transform: capitalize;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.outer-container ::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.outer-container ::placeholder {
+  text-transform: capitalize;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.outer-container .placeholder-fix:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.outer-container .placeholder-fix:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.outer-container .placeholder-fix:-moz-placeholder {
+  color: transparent;
+}
+
+.outer-container .btn {
+  background-color: #bb2f2f;
+  padding: 18px 24px;
+  border: 0;
+  outline: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 30px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.outer-container .btn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 1rem;
+}
+
+.outer-container .map {
+  height: 100%;
+}
+/*# sourceMappingURL=contact.css.map */

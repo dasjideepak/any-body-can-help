@@ -7,15 +7,18 @@
 .mission-div , .vision-div , .motive-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 3rem 0;
-    border:1px solid rgb(86, 199, 86);
-    box-shadow: 1px 1px 1rem  2px  grey;
+    margin: 3rem 0; 
+    border-radius: 6px;
     padding: 1rem;
-    background-color:#FDBB00;
+    color: black;
+    background-color:rgb(246, 198, 64,);
+    // box-shadow: 40px 40px 5px 0px rgba(87,84,87,1);    
+    font-size: 1.5rem;
     &:hover{
-        transform: scale(1.2);
-        transition: transform 0.73s;
-        box-shadow: none;
+        box-shadow: 8px 8px 1.5rem  4px  #E04D39;
+        .read-btn{
+            background-color: #E04D39;
+        }
     }
 }
 .mission-img{
@@ -31,17 +34,19 @@
     .mission-header{
         font-size: 2rem;
         margin-bottom: 1rem;
+       
     }
     .mission-para{
         margin-bottom: 1rem;
-    }
-    a{
-        text-decoration: underline;
-        &:hover{
-            color: red;
-        }
+        // text-shadow: 2px 1px 5px rgba(150, 150, 150, 1);
+    
     }
 
+}
+.read-btn{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
 }
 .div-donation{
     background-color: black;
@@ -59,7 +64,7 @@
         font-size: 2rem;
     }
 }
-@media all and (max-width:768px){
+@media all and (max-width:900px){
     .about-html{
         font-size: 14px;
         text-align: justify;

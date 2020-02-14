@@ -1,0 +1,27 @@
+.plastic-html{
+    font-size: 20px;
+    line-height: 1.5;
+    h2{
+        margin: 1rem 0;
+    }
+}
+.plastic-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 4rem;
+    padding: 10px;
+    border: 1px solid grey;
+    box-shadow:  2rem 2rem 1rem 1px grey;
+}
+.img-plastic-div{
+    font-size: 0;
+    width: 100%;
+}
+.plastic-para-article{
+    font-size: 1.1rem;
+    text-align: justify;
+    li{
+        margin: 0.5rem 0;
+    }
+}

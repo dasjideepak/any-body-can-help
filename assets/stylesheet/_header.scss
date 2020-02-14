@@ -23,7 +23,7 @@
 
 .nav-links a {
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     display: inline-block;
 }
 
@@ -41,7 +41,7 @@ a:hover {
 
 //Header Responsive
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
     .header {
       background-color: black;
     }
@@ -52,14 +52,18 @@ a:hover {
       bottom: 0;
       right: 0;
       left: 0;
-      text-align: center;
+      text-align: left;
       padding-top: 80px;
+      height: 290px;
+      text-transform: uppercase;
     }
     .nav-links li {
-      margin: 32px 0;
+      margin: 0 16px;
+      border-bottom: 1px solid rgb(77, 76, 76);
     }
     .nav-links li a {
-      color: red;
+      color: white;
+      padding: 8px 0;
     }
     .logo {
       z-index: 999;
@@ -69,13 +73,13 @@ a:hover {
     }
     .ham {
       font-size: 20px;
-      color: red;
+      color: rgb(253, 252, 252);
       display: inline-block;
       z-index: 999;
     }
     .toggle:checked ~ .nav-links {
       display: inline-block;
       background-color: black;
-      height: 500px;
     }
 }    
+

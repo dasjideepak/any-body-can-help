@@ -5,12 +5,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+
   @media all and (max-width: 768px) {
     width: 100%;
     grid-template-columns: auto;
     padding: 30px 0;
+    grid-gap: 25px 0;
   }
- 
+
   .back-circle {
     height: 135px;
     width: 135px;
@@ -51,6 +53,7 @@
 .outer-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   @media all and (max-width: 768px) {
     width: 100%;
     grid-template-columns: auto;
@@ -72,28 +75,44 @@
     text-align: center;
   }
 
-  input,
-  textarea {
+  .form-width {
+    width: 100%;
+  }
+
+  input {
     background-color: transparent;
-    padding: 18px;
-    margin: 16px 92px;
+    padding: 18px 6px;
+    margin: 16px 6px;
+    width: 45%;
+    border:1px solid white;
     border-radius: 8px;
-    border: 0;
-    border-bottom: 1px solid white;
     outline: none;
     color: white;
+
     @media all and (max-width: 768px) {
+   
+
       width: 65%;
       border: 1px solid white;
+
       .res-padding {
         padding: 30px 0;
+      }
+
+      .form-width {
+        width: 100%;
       }
     }
   }
 
   textarea {
-    width: 62%;
+    padding: 18px 6px;
+    margin: 16px 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 92%;
     height: 80px;
+
     @media all and (max-width: 768px) {
       width: 65%;
       border: 1px solid white;
@@ -107,9 +126,18 @@
     text-align: left;
     font-size: 1rem;
   }
-  .placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
-  .placeholder-fix:focus::-moz-placeholder   {color:transparent;}
-  .placeholder-fix:-moz-placeholder   {color:transparent;}
+
+  .placeholder-fix:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .placeholder-fix:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .placeholder-fix:-moz-placeholder {
+    color: transparent;
+  }
 
   .btn {
     background-color: rgb(187, 47, 47);

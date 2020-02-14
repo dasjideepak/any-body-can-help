@@ -65,6 +65,8 @@
     }
     .mission-div , .vision-div , .motive-div{
         grid-template-columns: 1fr;
-    }   
-
+        &:hover{
+            transform: none;
+        }
+    }
 }

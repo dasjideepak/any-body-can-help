@@ -94,9 +94,6 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .grid {
@@ -104,56 +101,6 @@ img {
   display: grid;
   -ms-grid-columns: (fr)[4];
       grid-template-columns: repeat(4, fr);
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  line-height: 1.5;
-  font-family: 'Roboto Slab', serif;
-}
-
-.text-center {
-  text-align: center;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 0.75rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
-p {
-  font-size: 18px;
-}
-
-.padding {
-  padding: 80px 0;
 }
 
 .header {
@@ -172,7 +119,7 @@ p {
 
 .logo {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .nav-links li {
@@ -210,7 +157,6 @@ a:hover {
     left: 0;
     text-align: center;
     padding-top: 80px;
-    background-color: #040a07;
   }
   .nav-links li {
     margin: 32px 0;
@@ -389,9 +335,6 @@ a:hover {
 }
 
 @media all and (max-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
   .box-grid {
     display: -ms-grid;
     display: grid;
@@ -401,6 +344,62 @@ a:hover {
   .fact-count-row {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto Slab', serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+@media all and (max-width: 1024px) {
+  html {
+    font-size: 12px;
   }
 }
 
@@ -417,6 +416,8 @@ a:hover {
     width: 100%;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    padding: 30px 0;
+    grid-gap: 25px 0;
   }
 }
 
@@ -489,32 +490,40 @@ a:hover {
   text-align: center;
 }
 
-.outer-container input,
-.outer-container textarea {
+.outer-container .form-width {
+  width: 100%;
+}
+
+.outer-container input {
   background-color: transparent;
-  padding: 18px;
-  margin: 12px 24px;
+  padding: 18px 6px;
+  margin: 16px 6px;
+  width: 45%;
+  border: 1px solid white;
   border-radius: 8px;
-  border: 0;
-  border-bottom: 1px solid white;
   outline: none;
   color: white;
 }
 
 @media all and (max-width: 768px) {
-  .outer-container input,
-  .outer-container textarea {
+  .outer-container input {
     width: 65%;
     border: 1px solid white;
   }
-  .outer-container input .res-padding,
-  .outer-container textarea .res-padding {
+  .outer-container input .res-padding {
     padding: 30px 0;
+  }
+  .outer-container input .form-width {
+    width: 100%;
   }
 }
 
 .outer-container textarea {
-  width: 70%;
+  padding: 18px 6px;
+  margin: 16px 12px;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 92%;
   height: 80px;
 }
 
@@ -661,7 +670,7 @@ a:hover {
 }
 
 .fab-link {
-  color: white;
+  color: grey;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -712,6 +721,20 @@ a:hover {
     grid-gap: 40px 0;
     padding: 40px 0;
   }
+}
+
+.volunteer-face .volunteer-size-max img {
+  height: 250px;
+}
+
+.volunteer-face .volunteer-size-max:hover {
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .main-footer {
@@ -765,15 +788,15 @@ a:hover {
       justify-content: space-around;
 }
 
-.social-links a {
+.social-links .social-links a {
   font-size: 1.5rem;
   color: white;
 }
 
 .fab {
-  background-color: blue;
   padding: 0.75rem;
   border-radius: 50%;
+  color: white;
 }
 
 .fa-facebook {
@@ -790,6 +813,10 @@ a:hover {
 
 .fa-instagram {
   background-color: #9D36B9;
+}
+
+.fa-linkedin {
+  background-color: #4c8be9;
 }
 
 .contact-text {

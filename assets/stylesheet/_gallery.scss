@@ -1,0 +1,54 @@
+.gallery-html {
+    font-size: 20px;
+}
+
+.container-gallery {
+    max-width: 1260px;
+    margin: 5rem auto;
+}
+
+.gallery-heading {
+    font-size: 4rem;
+    margin: 5rem 0;
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    text-transform: uppercase;
+}
+
+.gallery-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.gallery-img .img-pic {
+    font-size: 0;
+    grid-column: span 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-img:hover {
+    transform: scale(1.5);
+    transition: transform 0.73s;
+    box-shadow: 1px 1px 10px 10px coral;
+}
+
+
+@media all and (max-width:768px) {
+    .gallery-html {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .gallery-div {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}

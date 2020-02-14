@@ -361,22 +361,20 @@ a:hover {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   margin: 3rem 0;
-  border: 1px solid #56c756;
-  -webkit-box-shadow: 1px 1px 1rem  2px  grey;
-          box-shadow: 1px 1px 1rem  2px  grey;
+  border-radius: 6px;
   padding: 1rem;
-  background-color: #FDBB00;
+  color: black;
+  background-color: #f6c640;
+  font-size: 1.5rem;
 }
 
 .mission-div:hover, .vision-div:hover, .motive-div:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.73s;
-  transition: -webkit-transform 0.73s;
-  transition: transform 0.73s;
-  transition: transform 0.73s, -webkit-transform 0.73s;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 8px 8px 1.5rem  4px  #E04D39;
+          box-shadow: 8px 8px 1.5rem  4px  #E04D39;
+}
+
+.mission-div:hover .read-btn, .vision-div:hover .read-btn, .motive-div:hover .read-btn {
+  background-color: #E04D39;
 }
 
 .mission-img {
@@ -401,12 +399,10 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.about-header-div a {
-  text-decoration: underline;
-}
-
-.about-header-div a:hover {
-  color: red;
+.read-btn {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .div-donation {
@@ -484,20 +480,19 @@ a:hover {
 }
 
 .gallery-img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: -webkit-transform 0.73s;
-  transition: -webkit-transform 0.73s;
-  transition: transform 0.73s;
-  transition: transform 0.73s, -webkit-transform 0.73s;
-  -webkit-box-shadow: 1px 1px 10px 10px #FDBB00;
-          box-shadow: 1px 1px 10px 10px #FDBB00;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: -webkit-transform 0.40s;
+  transition: -webkit-transform 0.40s;
+  transition: transform 0.40s;
+  transition: transform 0.40s, -webkit-transform 0.40s;
+  -webkit-box-shadow: 1px 1px 10px 4px #FDBB00;
+          box-shadow: 1px 1px 10px 4px #FDBB00;
 }
 
-img-pic {
+.img-pic {
   font-size: 0;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -516,6 +511,9 @@ img-pic {
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .gallery-img1 {
+    display: none;
   }
 }
 

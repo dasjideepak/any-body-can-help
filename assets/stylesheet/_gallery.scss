@@ -35,11 +35,7 @@
     width: 100%;
     object-fit: cover;   
 }
-@media all and (max-width:768px){
-    .gallery-html{
-        font-size: 14px;
-        text-align: justify;
-    }
+@media all and (max-width:900px){
     .gallery-div{
         grid-template-columns: 1fr;
     }
@@ -47,6 +43,7 @@
         transform: none;
         box-shadow: none;
     }
+}
     .gallery-img1{
         display: none;
     }

@@ -12,14 +12,15 @@
         color: rgb(185, 179, 179);
     }
     .col {
-        padding: 24px;
+        padding: 12px;
+        border: 1px solid beige;
         h4 {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: rgb(5, 252, 128);
             padding-bottom: 4px;
         }
         h5 {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     }
 }    
@@ -31,58 +32,88 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.gallery-img {
+    justify-content: space-around;
+}
+
 .gallery-img img {
     width: 100px;
     height: 100px;
     padding-bottom: 5px;
 }
 
-.social-links {
-    justify-content: space-around;
-    .social-links a {
-        font-size: 1.5rem;
-        color: white;
-    }
-}    
+// Diamond Social Link
+.footer-social {
+  margin: 0 auto;
+  text-align:center;
+  padding: 14px;
+  width: 280px;
+} 
 
-.fab {
-    padding: 0.75rem;
-    border-radius: 50%;
-    color: white;
-}    
+.footer-social a {
+  margin: 0 12px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  line-height: 25px;
+  transition: all 500ms ease;
+}
+.footer-social a i {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    padding: 12px;
+    font-size:24px
+}
 
-.fa-facebook {
-    background-color: #3E578F;
+.nav-fb {
+    background-color: #3b5998;
 }
-.fa-twitter {
-    background-color: #28A9E0;
+.nav-tweet {
+    background-color: #00aced;
 }
-.fa-youtube {
-    background-color: #D62628;
+.nav-yout {
+    background-color: #bb0000;
 }
-.fa-instagram {
-    background-color: #9D36B9;
+.nav-insta {
+    background-color: #517fa4;
 }
-.fa-linkedin {
-    background-color: rgb(76, 139, 233);
+.nav-pin {
+    background-color: #cb2027;
+}
+.nav-linked {
+    background-color: #007bb6;
 }
 
 
-.contact-text {
-    width: 80%;
+/* hover */
+.footer-social a:hover{
+    color: #fff;
+}
+.footer-social a:hover{
+    background: #111;
 }
 
 .contact-footer {
     padding: 20px 0;
+    justify-content: space-around;
 }
 
+.contact-text {
+    width: 70%;
+}
 
 .far, .fa-phone-alt {
-    font-size: 1.4rem;
-    background-color:  rgb(224, 169, 18);
+    font-size: 1rem;
+    background-color:  rgb(134, 5, 5);
     border-radius: 50%;
     padding: 0.75rem;
-    color: white;
+    color: rgb(248, 247, 247);
 }
 
 .footer {
@@ -106,5 +137,14 @@
 @media all and (max-width:1024px) {
     .main-footer-row {
         grid-template-columns: 1fr;
-    } 
+        .social-links {
+           justify-content: center;
+           .fab {
+                margin: 20px;
+           }
+        }   
+        .contact-footer {
+           justify-content: center;
+       }     
+    }
 }

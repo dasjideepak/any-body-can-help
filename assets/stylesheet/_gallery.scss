@@ -36,11 +36,7 @@ img-pic{
     height: 100%;
     object-fit: cover;   
 }
-@media all and (max-width:768px){
-    .gallery-html{
-        font-size: 14px;
-        text-align: justify;
-    }
+@media all and (max-width:900px){
     .gallery-div{
         grid-template-columns: 1fr;
     }
@@ -49,3 +45,4 @@ img-pic{
         box-shadow: none;
     }
 }
+

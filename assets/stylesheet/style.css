@@ -128,7 +128,7 @@ img {
 
 .nav-links a {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   display: inline-block;
 }
 
@@ -144,7 +144,7 @@ a:hover {
   display: none;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
   .header {
     background-color: black;
   }
@@ -155,14 +155,18 @@ a:hover {
     bottom: 0;
     right: 0;
     left: 0;
-    text-align: center;
+    text-align: left;
     padding-top: 80px;
+    height: 290px;
+    text-transform: uppercase;
   }
   .nav-links li {
-    margin: 32px 0;
+    margin: 0 16px;
+    border-bottom: 1px solid #4d4c4c;
   }
   .nav-links li a {
-    color: red;
+    color: white;
+    padding: 8px 0;
   }
   .logo {
     z-index: 999;
@@ -172,14 +176,13 @@ a:hover {
   }
   .ham {
     font-size: 20px;
-    color: red;
+    color: #fdfcfc;
     display: inline-block;
     z-index: 999;
   }
   .toggle:checked ~ .nav-links {
     display: inline-block;
     background-color: black;
-    height: 500px;
   }
 }
 
@@ -334,7 +337,7 @@ a:hover {
   color: black;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
   .box-grid {
     display: -ms-grid;
     display: grid;
@@ -430,7 +433,7 @@ a:hover {
   font-size: 2rem;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .about-html {
     font-size: 14px;
     text-align: justify;
@@ -498,11 +501,7 @@ img-pic {
      object-fit: cover;
 }
 
-@media all and (max-width: 768px) {
-  .gallery-html {
-    font-size: 14px;
-    text-align: justify;
-  }
+@media all and (max-width: 900px) {
   .gallery-div {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -545,12 +544,9 @@ img-pic {
 }
 
 html {
-  font-size: 16px;
-}
-
-body {
+  font-size: 18px;
   line-height: 1.5;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Vollkorn', serif;
 }
 
 .text-center {
@@ -558,19 +554,19 @@ body {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 h6 {
@@ -583,18 +579,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .padding {
   padding: 80px 0;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
   html {
     font-size: 12px;
   }
@@ -608,7 +604,7 @@ p {
   justify-items: center;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .contact-links {
     width: 100%;
     -ms-grid-columns: auto;
@@ -662,7 +658,7 @@ p {
       grid-template-columns: repeat(2, 1fr);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .outer-container {
     width: 100%;
     -ms-grid-columns: auto;
@@ -698,7 +694,7 @@ p {
   color: white;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .outer-container input,
   .outer-container textarea {
     width: 65%;
@@ -715,7 +711,7 @@ p {
   height: 80px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .outer-container textarea {
     width: 65%;
     border: 1px solid white;
@@ -861,6 +857,11 @@ p {
   background-color: green;
 }
 
+.link-circle {
+  background-color: #060057;
+  padding: 20px;
+}
+
 .fab-link {
   color: white;
   position: absolute;
@@ -887,7 +888,7 @@ p {
       grid-template-columns: repeat(3, 1fr);
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
   .our-member {
     width: 100%;
     -ms-grid-columns: auto;
@@ -915,17 +916,18 @@ p {
 }
 
 .main-footer .col {
-  padding: 24px;
+  padding: 12px;
+  border: 1px solid beige;
 }
 
 .main-footer .col h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #05fc80;
   padding-bottom: 4px;
 }
 
 .main-footer .col h5 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .main-footer-row {
@@ -937,62 +939,94 @@ p {
       grid-template-columns: repeat(4, 1fr);
 }
 
+.gallery-img {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .gallery-img img {
   width: 100px;
   height: 100px;
   padding-bottom: 5px;
 }
 
-.social-links {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.footer-social {
+  margin: 0 auto;
+  text-align: center;
+  padding: 14px;
+  width: 280px;
 }
 
-.social-links .social-links a {
-  font-size: 1.5rem;
+.footer-social a {
+  margin: 0 12px;
+  text-align: center;
+  display: inline-block;
   color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  line-height: 25px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
-.fab {
-  padding: 0.75rem;
-  border-radius: 50%;
-  color: white;
+.footer-social a i {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  padding: 12px;
+  font-size: 24px;
 }
 
-.fa-facebook {
-  background-color: #3E578F;
+.nav-fb {
+  background-color: #3b5998;
 }
 
-.fa-twitter {
-  background-color: #28A9E0;
+.nav-tweet {
+  background-color: #00aced;
 }
 
-.fa-youtube {
-  background-color: #D62628;
+.nav-yout {
+  background-color: #bb0000;
 }
 
-.fa-instagram {
-  background-color: #9D36B9;
+.nav-insta {
+  background-color: #517fa4;
 }
 
-.fa-linkedin {
-  background-color: #4c8be9;
+.nav-pin {
+  background-color: #cb2027;
 }
 
-.contact-text {
-  width: 80%;
+.nav-linked {
+  background-color: #007bb6;
+}
+
+/* hover */
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-social a:hover {
+  background: #111;
 }
 
 .contact-footer {
   padding: 20px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-text {
+  width: 70%;
 }
 
 .far, .fa-phone-alt {
-  font-size: 1.4rem;
-  background-color: #e0a912;
+  font-size: 1rem;
+  background-color: #860505;
   border-radius: 50%;
   padding: 0.75rem;
-  color: white;
+  color: #f8f7f7;
 }
 
 .footer {
@@ -1017,6 +1051,19 @@ p {
   .main-footer-row {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .main-footer-row .social-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-footer-row .social-links .fab {
+    margin: 20px;
+  }
+  .main-footer-row .contact-footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

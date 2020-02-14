@@ -70,6 +70,11 @@
   }
 }
 
+.link-circle {
+  background-color: rgb(6, 0, 87);
+  padding: 20px;
+}
+
 .fab-link {
   color: white;
   position: absolute;
@@ -93,23 +98,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  @media all and (max-width: 1024px) {
+  @media all and (max-width: 900px) {
     width: 100%;
     grid-template-columns: auto;
     grid-gap: 40px 0;
     padding: 40px 0;
   }
 }
-
-// our-volunteer
-// .volunteer-face {
-//   display: grid;
-//   grid-template-columns:repeat(3,1fr);
-//   grid-gap: 45px 20px;
-//   @media all and (max-width: 1024px) {
-//     width: 100%;
-//     grid-template-columns: auto;
-//     grid-gap: 40px 0;
-//     padding: 40px 0;
-//   }
-// }

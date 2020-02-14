@@ -371,6 +371,10 @@ a:hover {
 .mission-div:hover, .vision-div:hover, .motive-div:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.73s;
+  transition: -webkit-transform 0.73s;
+  transition: transform 0.73s;
+  transition: transform 0.73s, -webkit-transform 0.73s;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -486,8 +490,8 @@ a:hover {
   transition: -webkit-transform 0.73s;
   transition: transform 0.73s;
   transition: transform 0.73s, -webkit-transform 0.73s;
-  -webkit-box-shadow: 1px 1px 10px 10px coral;
-          box-shadow: 1px 1px 10px 10px coral;
+  -webkit-box-shadow: 1px 1px 10px 10px #FDBB00;
+          box-shadow: 1px 1px 10px 10px #FDBB00;
 }
 
 img-pic {
@@ -515,8 +519,47 @@ img-pic {
   }
 }
 
+.background-plastic {
+  background-image: url(../media/plastic.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 0;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 50px auto;
+}
+
+.event-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-event {
+  font-size: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.plastic-div, .tree-div, .clean-div {
+  border: 2px solid #FBDD00;
+  padding: 10px;
+  text-align: justify;
+}
+
+.heading-events {
+  text-align: center;
+}
+
 .container-why {
-  max-width: 1260px;
+  max-width: 1360px;
   margin: 5rem auto;
 }
 

@@ -64,10 +64,6 @@
   border-radius: 50%;
   border: 1px solid gray;
   position: relative;
-
-  &:hover {
-    background-color: green;
-  }
 }
 
 .fab-link {
@@ -112,6 +108,7 @@
     grid-gap: 40px 0;
     padding: 40px 0;
   }
+  
   .volunteer-size-max {
     img {
       height: 250px;

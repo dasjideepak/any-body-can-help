@@ -909,10 +909,6 @@ p {
   position: relative;
 }
 
-.link-circle:hover {
-  background-color: green;
-}
-
 .fab-link {
   color: grey;
   position: absolute;

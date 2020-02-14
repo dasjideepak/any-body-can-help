@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  padding: 120px 0;
   @media all and (max-width: 900px) {
     width: 100%;
     grid-template-columns: auto;
@@ -58,7 +59,7 @@
   }
 
   .form-container {
-    background-color: #333333;
+    background-color: #504f4f;
     padding: 60px 0;
   }
 

@@ -71,7 +71,7 @@
 }
 
 .fab-link {
-  color: white;
+  color: grey;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,14 +102,25 @@
 }
 
 // our-volunteer
-// .volunteer-face {
-//   display: grid;
-//   grid-template-columns:repeat(3,1fr);
-//   grid-gap: 45px 20px;
-//   @media all and (max-width: 1024px) {
-//     width: 100%;
-//     grid-template-columns: auto;
-//     grid-gap: 40px 0;
-//     padding: 40px 0;
-//   }
-// }
+.volunteer-face {
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-gap: 45px 20px;
+  @media all and (max-width: 1024px) {
+    width: 100%;
+    grid-template-columns: auto;
+    grid-gap: 40px 0;
+    padding: 40px 0;
+  }
+  .volunteer-size-max {
+    img {
+      height: 250px;
+    }
+    &:hover {
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      transform: scale(1.2);
+      box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

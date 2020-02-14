@@ -657,6 +657,7 @@ p {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     padding: 30px 0;
+    grid-gap: 25px 0;
   }
 }
 
@@ -729,32 +730,40 @@ p {
   text-align: center;
 }
 
-.outer-container input,
-.outer-container textarea {
+.outer-container .form-width {
+  width: 100%;
+}
+
+.outer-container input {
   background-color: transparent;
-  padding: 18px;
-  margin: 16px 92px;
+  padding: 18px 6px;
+  margin: 16px 6px;
+  width: 45%;
+  border: 1px solid white;
   border-radius: 8px;
-  border: 0;
-  border-bottom: 1px solid white;
   outline: none;
   color: white;
 }
 
 @media all and (max-width: 768px) {
-  .outer-container input,
-  .outer-container textarea {
+  .outer-container input {
     width: 65%;
     border: 1px solid white;
   }
-  .outer-container input .res-padding,
-  .outer-container textarea .res-padding {
+  .outer-container input .res-padding {
     padding: 30px 0;
+  }
+  .outer-container input .form-width {
+    width: 100%;
   }
 }
 
 .outer-container textarea {
-  width: 62%;
+  padding: 18px 6px;
+  margin: 16px 12px;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 92%;
   height: 80px;
 }
 
@@ -905,7 +914,7 @@ p {
 }
 
 .fab-link {
-  color: white;
+  color: grey;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -938,6 +947,38 @@ p {
     grid-gap: 40px 0;
     padding: 40px 0;
   }
+}
+
+.volunteer-face {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 45px 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .volunteer-face {
+    width: 100%;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px 0;
+    padding: 40px 0;
+  }
+}
+
+.volunteer-face .volunteer-size-max img {
+  height: 250px;
+}
+
+.volunteer-face .volunteer-size-max:hover {
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .main-footer {

@@ -558,6 +558,42 @@ img-pic {
   text-align: center;
 }
 
+.plastic-html {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.plastic-html h2 {
+  margin: 1rem 0;
+}
+
+.plastic-article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 4rem;
+  padding: 10px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 2rem 2rem 1rem 1px grey;
+          box-shadow: 2rem 2rem 1rem 1px grey;
+}
+
+.img-plastic-div {
+  font-size: 0;
+  width: 100%;
+}
+
+.plastic-para-article {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.plastic-para-article li {
+  margin: 0.5rem 0;
+}
+
 .container-why {
   max-width: 1360px;
   margin: 5rem auto;

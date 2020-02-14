@@ -13,7 +13,6 @@
     }
     .col {
         padding: 12px;
-        border: 1px solid beige;
         h4 {
             font-size: 1rem;
             color: rgb(5, 252, 128);
@@ -23,23 +22,28 @@
             font-size: 0.9rem;
         }
     }
+    .mission-col {
+        padding-right: 26px;
+    }
 }    
 
 .main-footer-row {
     max-width: 1480px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+    grid-template-columns: repeat(4, 1fr);   
+}    
 
-.gallery-img {
-    justify-content: space-around;
+.footer-gallery-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
-
-.gallery-img img {
-    width: 100px;
-    height: 100px;
-    padding-bottom: 5px;
+.footer-gallery-img >a{
+    height: 100%;
+    padding: 4px;
+    img {
+        height: 100%;
+    }
 }
 
 // Diamond Social Link
@@ -110,10 +114,11 @@
 
 .far, .fa-phone-alt {
     font-size: 1rem;
-    background-color:  rgb(134, 5, 5);
+    background-color:  #1a0836;
     border-radius: 50%;
     padding: 0.75rem;
     color: rgb(248, 247, 247);
+    border: 1px solid white;
 }
 
 .footer {
@@ -134,14 +139,20 @@
     color: rgb(216, 162, 101);
 }
 
-@media all and (max-width:1024px) {
+@media all and (max-width:900px) {
     .main-footer-row {
         grid-template-columns: 1fr;
+        .col {
+            padding: 10px 36px;
+        }
         .social-links {
            justify-content: center;
            .fab {
                 margin: 20px;
            }
+        }
+        .contact-text {
+            margin-left: 20px;
         }   
         .contact-footer {
            justify-content: center;

@@ -494,14 +494,6 @@ a:hover {
           box-shadow: 1px 1px 10px 10px #FDBB00;
 }
 
-img-pic {
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @media all and (max-width: 768px) {
   .gallery-html {
     font-size: 14px;
@@ -519,39 +511,11 @@ img-pic {
   }
 }
 
-.background-plastic {
-  background-image: url(../media/plastic.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 0;
-}
-
-.container {
-  max-width: 1360px;
-  margin: 50px auto;
-}
-
 .event-div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-.img-event {
-  font-size: 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 300px;
-  border-radius: 50%;
-}
-
-.plastic-div, .tree-div, .clean-div {
-  border: 2px solid #FBDD00;
-  padding: 10px;
-  text-align: justify;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .heading-events {

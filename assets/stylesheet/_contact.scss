@@ -5,8 +5,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-
-  @media all and (max-width: 768px) {
+  padding: 120px 0;
+  @media all and (max-width: 900px) {
     width: 100%;
     grid-template-columns: auto;
     padding: 30px 0;
@@ -53,14 +53,13 @@
 .outer-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 900px) {
     width: 100%;
     grid-template-columns: auto;
   }
 
   .form-container {
-    background-color: #333333;
+    background-color: #504f4f;
     padding: 60px 0;
   }
 
@@ -88,10 +87,7 @@
     border-radius: 8px;
     outline: none;
     color: white;
-
-    @media all and (max-width: 768px) {
-   
-
+    @media all and (max-width: 900px) {
       width: 65%;
       border: 1px solid white;
 
@@ -112,8 +108,7 @@
     border-radius: 8px;
     width: 92%;
     height: 80px;
-
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 900px) {
       width: 65%;
       border: 1px solid white;
     }

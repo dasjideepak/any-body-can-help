@@ -55,6 +55,7 @@
     font-size: 1.1rem;
     padding: 18px 0;
     color: #85403a;
+    text-align: justify;
   }
 }
 
@@ -66,6 +67,16 @@
   position: relative;
 }
 
+.link-circle {
+  background-color: rgb(6, 0, 87);
+  padding: 20px;
+  margin-top: 2 0px;
+}
+
+.links a i {
+  color: white;
+}
+
 .fab-link {
   color: grey;
   position: absolute;
@@ -75,7 +86,7 @@
   font-size: 1.1rem;
 
   &:hover {
-    color: white
+    color: rgb(226, 169, 82);
   }
 }
 
@@ -89,7 +100,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  @media all and (max-width: 1024px) {
+  @media all and (max-width: 900px) {
     width: 100%;
     grid-template-columns: auto;
     grid-gap: 40px 0;
@@ -102,7 +113,7 @@
   display: grid;
   grid-template-columns:repeat(4,1fr);
   grid-gap: 45px 20px;
-  @media all and (max-width: 1024px) {
+  @media all and (max-width: 900px) {
     width: 100%;
     grid-template-columns: auto;
     grid-gap: 40px 0;

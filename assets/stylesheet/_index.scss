@@ -1,50 +1,3 @@
-//Hero Section - Index Page Style
-
-.hero-banner {
-    background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/home-banner.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 280px 0;
-      color: white;
-    }
-    .first-hero-heading {
-      font-weight: 500;
-      color:#FDBB00;
-      padding-bottom: 20px; 
-    }
-    .second-hero-heading {
-      font-weight: 800;
-      padding-bottom: 20px;
-    }
-    .hero-content p {
-      padding: 0 76px;
-      font-size: 1rem;
-    }
-  }
-  
-  .btn {
-    padding: 1rem 2.5rem;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-top: 30px;
-  }
-  .donate-btn {
-    background-color: #60BC0F;
-  }
-  
-  .join-us-btn {
-    background-color: #FDBB00;
-    margin-left: 10px;
-  }
-  
-  .donate-btn a, .join-us-btn a{
-    color: white;
-  }
-  
   .box-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,6 +5,7 @@
       padding: 80px 40px;
       font-weight: 200;
       font-size: 0.75rem;
+      text-align: justify;
     }
     .col-1 {
       background-color: rgb(224, 77, 57);
@@ -79,7 +33,7 @@
   // counting 
   
   .fact-counter-sec {
-    background-color: rgb(208, 235, 236);
+    background-color: rgb(158, 158, 158);
   }
   
   .fact-container {
@@ -109,6 +63,7 @@
     }
     p {
       padding-top: 20px;
+      font-size: 1.2rem;
     }
   }
   
@@ -120,7 +75,8 @@
     background-size: cover;
     color: white; 
     p {
-      padding: 20px 0;
+      padding: 24px;
+      font-size: 1.2rem;
     }
     .btn {
       border-radius: 5px;
@@ -130,13 +86,16 @@
     }
   }
   
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
     .box-grid {
         display: grid;
         grid-template-columns: 1fr;
     }    
     .fact-count-row {
         grid-template-columns: 1fr;
-
-    }    
+    }
+    h4 {
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
 }   

@@ -1,81 +1,186 @@
+//Header 
+
 .header {
-    background-color: transparent;
-    position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    padding: 16px;
+  background-color: transparent;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
 }
 
 .header-container {
-    max-width: 1480px;
-    margin: 0 auto;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
-.logo {
-  color: white;
-  font-size: 1.5rem;
+.first-logo {
+  width: 140px;
+}
+
+.second-logo {
+  display: none;
 }
 
 .nav-links li {
-    margin-left: 32px;
+  margin-left: 32px;
 }
 
 .nav-links a {
-    color: white;
-    font-size: 1.25rem;
-    display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: 600;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 .ham {
-    display: none;
+  display: none;
 }
 
 #toggle {
-    display: none;
+  display: none;
 }
+
+// Hero Section - Header
+
+.index-hero-img,
+.about-hero-img, 
+.gallery-hero-img, 
+.team-hero-img, 
+.contact-hero-img  {
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.index-hero-img {
+  background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/home-banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.about-hero-img {
+  background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.gallery-hero-img {
+  background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.team-hero-img {
+  background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.contact-hero-img {
+  background: linear-gradient(rgba(3,1,10,0.5),rgba(3,1,10,0.5)), url(../media/img6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-banner {
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    padding: 340px 0;
+  }
+  .first-hero-heading {
+    font-weight: 600;
+    color: #EBFF00;
+    padding-bottom: 20px; 
+  }
+  .second-hero-heading {
+    font-weight: 800;
+    padding-bottom: 20px;
+  }
+  .hero-content p {
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 30px;
+  font-weight: 700;
+}
+.donate-btn {
+  background-color: #60BC0F;
+}
+
+.join-us-btn {
+  background-color: #FDBB00;
+  margin-left: 10px;
+}
+
+.donate-btn a, .join-us-btn a{
+  color: white;
+}
+
 
 //Header Responsive
 
-@media all and (max-width: 1024px) {
-    .header {
-      background-color: black;
-    }
-    .nav-links {
-      display: none;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      text-align: center;
-      padding-top: 80px;
-    }
-    .nav-links li {
-      margin: 32px 0;
-    }
-    .nav-links li a {
-      color: red;
-    }
-    .logo {
-      z-index: 999;
-    }
-    .top-nav a {
-      font-size: 24px;
-    }
-    .ham {
-      font-size: 20px;
-      color: red;
-      display: inline-block;
-      z-index: 999;
-    }
-    .toggle:checked ~ .nav-links {
-      display: inline-block;
-      background-color: black;
-      height: 500px;
-    }
+@media all and (max-width: 900px) {
+  .header {
+    background-color: black;
+    height: 92px;
+    padding: 8px;
+  }
+  .first-logo {
+    display: none;
+  }
+  .second-logo {
+    width: 84px;
+    display: inline-block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+    padding-top: 100px;
+    height: 300px;
+    text-transform: uppercase;
+  }
+  .nav-links li {
+    margin: 0 1.4rem;
+    border-bottom: 1px solid rgb(77, 76, 76);
+  }
+  .nav-links li a {
+    color: white;
+    padding: 8px 0;
+  }
+  .logo {
+    z-index: 999;
+  }
+  .top-nav a {
+    font-size: 2rem;
+  }
+  .ham {
+    font-size: 2.2rem;
+    color: rgb(253, 252, 252);
+    display: inline-block;
+    z-index: 999;
+    padding: 20px 10px 0px 0px;
+    color: red;
+  }
+  .toggle:checked ~ .nav-links {
+    display: inline-block;
+    background-color: black;
+  }
 }    

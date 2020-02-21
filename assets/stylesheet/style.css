@@ -676,7 +676,7 @@ a:hover {
 
 .volunteer-info h4 {
   text-transform: capitalize;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   padding: 12px 0;
 }
 
@@ -730,8 +730,8 @@ a:hover {
   grid-gap: 35px 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 @media all and (max-width: 900px) {

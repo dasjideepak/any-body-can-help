@@ -35,7 +35,7 @@
 .volunteer-info {
   h4 {
     text-transform: capitalize;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     padding: 12px 0;
 
     &:hover {
@@ -89,7 +89,7 @@
 .our-member {
   grid-gap: 35px 15px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   @media all and (max-width: 900px) {
     width: 100%;

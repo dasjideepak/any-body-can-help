@@ -677,6 +677,7 @@ a:hover {
 .volunteer-info h4 {
   text-transform: capitalize;
   font-size: 1.5rem;
+  padding: 8px 0;
 }
 
 .volunteer-info h4:hover {
@@ -692,7 +693,7 @@ a:hover {
 .volunteer-into p {
   text-transform: capitalize;
   font-size: 1.1rem;
-  padding: 18px 0;
+  padding: 2px 0;
   color: #85403a;
   text-align: justify;
 }
@@ -707,8 +708,8 @@ a:hover {
 
 .link-circle {
   background-color: #060057;
-  padding: 20px;
-  margin-top: 2 0px;
+  padding: 16px;
+  margin: 8px 0px;
 }
 
 .links a i {
@@ -722,7 +723,7 @@ a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .fab-link:hover {

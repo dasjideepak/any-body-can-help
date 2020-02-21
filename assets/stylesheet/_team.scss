@@ -36,6 +36,7 @@
   h4 {
     text-transform: capitalize;
     font-size: 1.5rem;
+    padding: 8px 0;
 
     &:hover {
       color: green;
@@ -53,7 +54,7 @@
   p {
     text-transform: capitalize;
     font-size: 1.1rem;
-    padding: 18px 0;
+    padding: 2px 0;
     color: #85403a;
     text-align: justify;
   }
@@ -69,8 +70,8 @@
 
 .link-circle {
   background-color: rgb(6, 0, 87);
-  padding: 20px;
-  margin-top: 2 0px;
+  padding: 16px;
+  margin: 8px 0px;
 }
 
 .links a i {
@@ -83,7 +84,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   &:hover {
     color: rgb(226, 169, 82);

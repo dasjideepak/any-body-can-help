@@ -35,8 +35,8 @@
 .volunteer-info {
   h4 {
     text-transform: capitalize;
-    font-size: 1.5rem;
-    padding: 8px 0;
+    font-size: 1.8rem;
+    padding: 12px 0;
 
     &:hover {
       color: green;
@@ -45,18 +45,8 @@
 
   p {
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #85403a;
-  }
-}
-
-.volunteer-into {
-  p {
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    padding: 2px 0;
-    color: #85403a;
-    text-align: justify;
   }
 }
 
@@ -66,12 +56,12 @@
   border-radius: 50%;
   border: 1px solid gray;
   position: relative;
+  margin-top: 12px;
 }
 
 .link-circle {
   background-color: rgb(6, 0, 87);
   padding: 16px;
-  margin: 8px 0px;
 }
 
 .links a i {
@@ -128,7 +118,7 @@
     &:hover {
       cursor: pointer;
       transition: all .5s ease-in-out;
-      transform: scale(1.2);
+      transform: scale(0.9);
       box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.5);
     }
   }
